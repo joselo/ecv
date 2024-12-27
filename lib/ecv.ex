@@ -14,7 +14,8 @@ defmodule Ecv do
 
   def fetch_path do
     # Path.join(File.cwd!(), "image.png")
-    Path.join(File.cwd!(), "cats.jpg")
+    # Path.join(File.cwd!(), "cats.jpg")
+    Path.join(File.cwd!(), "people.jpg")
   end
 
   def read_image(image_path) do
@@ -40,7 +41,8 @@ defmodule Ecv do
   end
 
   def cascade_file_path do
-    Path.join(File.cwd!(), "haarcascade_frontalcatface.xml")
+    # Path.join(File.cwd!(), "haarcascade_frontalcatface.xml")
+    Path.join(File.cwd!(), "smile_cascade.xml")
   end
 
   def detect_object(image, cascade) do
